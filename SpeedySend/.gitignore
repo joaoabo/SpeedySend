@@ -1,0 +1,33 @@
+﻿# Arquivos e pastas gerados automaticamente pelo Visual Studio
+.vs/
+.github/
+bin/
+obj/
+
+# Arquivos de configuração específicos do usuário
+*.user
+*.suo
+*.sln.docstates
+
+# Arquivos de dependências e pacotes NuGet
+packages/
+*.nupkg
+*.paket.template
+*.paket.restore
+paket-files/
+paket-files-cache/
+
+# Arquivos de build
+*.dll
+*.exe
+*.pdb
+*.log
+*.cache
+*.csv
+
+# Outros
+Thumbs.db
+*.DS_Store
+
+# Arquivo de configuração local
+appsettings.Development.json
