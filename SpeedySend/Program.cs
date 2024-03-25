@@ -1,4 +1,4 @@
-
+using SpeedySend.Infra.Services;
 namespace SpeedySend
 {
     public class Program
@@ -9,6 +9,7 @@ namespace SpeedySend
 
             // Add services to the container.
 
+            builder.Services.AddScoped<IEMailService, EMailService>();
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -26,10 +27,7 @@ namespace SpeedySend
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
-
             app.MapControllers();
-
             app.Run();
         }
     }
